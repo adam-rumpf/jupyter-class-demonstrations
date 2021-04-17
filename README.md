@@ -10,7 +10,7 @@ _This is a work in progress. A full description of the project, along with links
 
 * [Overview](#overview)
 * [Calculus, Differential Equations, and Analysis](#calculus-differential-equations-and-analysis)
-  * [Taylor and Fourier Series Approximations](#taylor-series-approximations)
+  * [Taylor Series Approximations](#taylor-series-approximations)
 
 ## Overview
 
