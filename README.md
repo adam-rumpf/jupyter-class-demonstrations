@@ -25,7 +25,7 @@ Many of the files in this folder are based on Mathematica demos originally writt
 
 ### Cobwebbing
 
-_(Images.)_
+<img src="img/cobwebbing-chaos.png" height="300"/>
 
 Created 4/20/2021
 
@@ -35,11 +35,7 @@ Created 4/20/2021
 
 [Original Mathematica Demonstration](https://github.com/adam-rumpf/mathematica-class-demonstrations#cobwebbing)
 
-_[Cobwebbing](https://en.wikipedia.org/wiki/Cobweb_plot) is a graphical technique for evaluating the long-term behavior of a discrete dynamical system. This demonstration automatically generates cobweb plots for a variety of test systems, although the method is meant to be used by hand to quickly analyze such a system without the need for a computer._
-
-_Specifically, cobwebbing is used for discrete dynamical systems for which the next iteration is given as a function f of the previous iteration. We first plot both the function and the y = x line on the same set of axes. Given an initial value x0, the next value should be f(x0), which we can eyeball from the plot by drawing a vertical line up from x0 on the x-axis until it touches the function curve. Intuitively, if we wanted to find the next iteration, we would need to transfer this value back onto the x-axis and then draw another vertical line up from it. However, because we already have the y = x line drawn, if we simply draw a horizontal line from our current position to it we will automatically reach the x-coordinate corresponding to our current y-coordinate. Then we can simply move vertically from this location. This process can be repeated as many times as needed to approximate the sequence of values produced by the system, alternating between moving vertically to the f curve to evaluate the update step, and then horizontally to the y = x line to convert the y-coordinate to an x-coordinate._
-
-_The points where the function curve passes through the y = x line are the fixed points of the system, and in general an initial solution will either approach or diverge from certain fixed points (or possibly enter a periodic orbit around them), which is how the long-term behavior of the system can be estimated. The result often ends up creating stair-step or spiral patterns which look like cobwebs, hence the name. In chaotic systems, like the [discrete logistic map](https://en.wikipedia.org/wiki/Logistic_map) with large growth rates, it provites a very clear picture of how complicated and messy things can get._
+This demonstration gives a brief introduction to [cobwebbing](https://en.wikipedia.org/wiki/Cobweb_plot), a graphical technique for quickly approximating the general behavior of a discrete dynamical system. This is a useful technique in mathematical biology since many population growth models take the form of a difference equation. In particular, if the population in the next time step is given as a function _f_ of the population in the current time step, then the cobweb plot can be used to estimate the sequence of population values over many time steps by drawing a zig-zagging line alternately between the _y = f(x)_ curve and the _y = x_ line. The complete demonstration includes an explanation for the motivation behind cobweb diagrams and the reasoning behind why they work, and goes through a few population models as examples. The standalone version includes only a pair of interactive widgets showing the process of drawing cobweb plots for two systems with adjustable parameters.
 
 ### Taylor Series Approximations
 
